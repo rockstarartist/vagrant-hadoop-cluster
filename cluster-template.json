@@ -1,0 +1,14 @@
+{
+  "blueprint" : "test-blueprint",
+  "default_password" : "password",
+  "host_groups" :[
+    {
+      "name" : "master_group",
+      "hosts" : [{"fqdn" : "masternode.vm"}]
+    },
+    {
+      "name" : "slave_group",
+      "host_count" : 2
+    }
+  ]
+}

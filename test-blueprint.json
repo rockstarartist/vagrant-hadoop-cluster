@@ -1,0 +1,71 @@
+{
+  "configurations" : [ ],
+  "host_groups" : [
+    {
+      "components" : [
+        { "name" : "HIVE_SERVER"            },
+        { "name" : "METRICS_MONITOR"        },
+        { "name" : "INFRA_SOLR_CLIENT"      },
+        { "name" : "HIVE_METASTORE"         },
+        { "name" : "TEZ_CLIENT"             },
+        { "name" : "ZOOKEEPER_CLIENT"       },
+        { "name" : "SPARK2_JOBHISTORYSERVER"},
+        { "name" : "WEBHCAT_SERVER"         },
+        { "name" : "SECONDARY_NAMENODE"     },
+        { "name" : "ZOOKEEPER_SERVER"       },
+        { "name" : "METRICS_COLLECTOR"      },
+        { "name" : "METRICS_GRAFANA"        },
+        { "name" : "YARN_CLIENT"            },
+        { "name" : "HDFS_CLIENT"            },
+        { "name" : "MYSQL_SERVER"           },
+        { "name" : "HISTORYSERVER"          },
+        { "name" : "LOGSEARCH_SERVER"       },
+        { "name" : "NAMENODE"               },
+        { "name" : "ZEPPELIN_MASTER"        },
+        { "name" : "PIG"                    },
+        { "name" : "MAPREDUCE2_CLIENT"      },
+        { "name" : "AMBARI_SERVER"          },
+        { "name" : "INFRA_SOLR"             },
+        { "name" : "LOGSEARCH_LOGFEEDER"    },
+        { "name" : "OOZIE_SERVER"           },
+        { "name" : "APP_TIMELINE_SERVER"    },
+        { "name" : "HIVE_CLIENT"            },
+        { "name" : "RESOURCEMANAGER"        },
+        { "name" : "KAFKA_BROKER"           }
+      ],
+      "configurations" : [ ],
+      "name" : "master_group",
+      "cardinality" : "1"
+    },
+    {
+      "components" : [
+        { "name" : "NODEMANAGER"        },
+        { "name" : "MAHOUT"             },
+        { "name" : "YARN_CLIENT"        },
+        { "name" : "HDFS_CLIENT"        },
+        { "name" : "SPARK2_CLIENT"      },
+        { "name" : "METRICS_MONITOR"    },
+        { "name" : "INFRA_SOLR_CLIENT"  },
+        { "name" : "TEZ_CLIENT"         },
+        { "name" : "ZOOKEEPER_CLIENT"   },
+        { "name" : "HCAT"               },
+        { "name" : "PIG"                },
+        { "name" : "MAPREDUCE2_CLIENT"  },
+        { "name" : "SLIDER"             },
+        { "name" : "ZOOKEEPER_SERVER"   },
+        { "name" : "OOZIE_CLIENT"       },
+        { "name" : "DATANODE"           },
+        { "name" : "LOGSEARCH_LOGFEEDER"},
+        { "name" : "HIVE_CLIENT"        },
+        { "name" : "KAFKA_BROKER"       }
+      ],
+      "configurations" : [ ],
+      "name" : "slave_group",
+      "cardinality" : "1+"
+    }
+  ],
+  "Blueprints" : {
+    "stack_name" : "HDP",
+    "stack_version" : "2.5"
+  }
+}
