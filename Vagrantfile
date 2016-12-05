@@ -4,9 +4,9 @@
 
   #Enables proxies in the provisioning shell scripts
   WITH_PROXY = "false"
-  PROXY_ADDRESS = "contractorproxyeast.northgrum.com"
-  PROXY_PORT = "80"
-  NAME_SERVERS = ["10.64.155.9", "10.241.24.50", "10.207.120.22"]
+  PROXY_ADDRESS = ""
+  PROXY_PORT = ""
+  NAME_SERVERS = [""]
 
   NUMBER_OF_DATANODES = 2
 
